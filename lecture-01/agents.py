@@ -25,7 +25,7 @@ class BaseAgent(game.Agent):
         self._dirs = [(1,0),(0,-1),(-1,0),(0,1)]
         self._percept = ('clear', None)
         self._actions = ['GoRight','GoLeft','GoForward','GoBack']
-        self._state = self.State()
+        self._state = self.State(state)
         
     def getAction(self, state):
         """Get the next action. Note that the state passed here is used only
